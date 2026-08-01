@@ -1,8 +1,25 @@
 aid: radiology-partners
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/radiology-partners.png
 name: Radiology Partners
-description: 'Radiology Partners is a company surfaced as a portfolio company of nea and added to the
-  API Evangelist network as a stub for enrichment. Sector: digital-health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Radiology Partners is a national radiology practice based in Austin, Texas that partners
+  with radiologists, radiology practices, hospitals, and health systems to deliver diagnostic imaging
+  services across the United States. Backed by New Enterprise Associates (NEA), the company focuses on
+  transforming radiology through clinical operations, technology, and scale rather than a public developer
+  platform. As of this enrichment pass the company publishes no developer portal, API documentation,
+  OpenAPI/AsyncAPI specifications, SDKs, MCP server, or /.well-known discovery surface on its public
+  websites (www.radiologypartners.com, which redirects to radpartners.com); only live domain-security
+  posture was probeable. This profile remains a company/lead record in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/radiology-partners/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Digital Health
+- Radiology
+- Medical Imaging
+- Healthcare
+- Diagnostics
+- Health Systems
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/radiology-partners-domain-security.yml
 - type: Website
-  url: https://www.radiologypartners.com
+  url: https://radpartners.com
+- type: Careers
+  url: https://radpartners.avature.net/careersmarketplace
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
